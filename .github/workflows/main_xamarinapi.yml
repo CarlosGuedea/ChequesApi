@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'XamarinApi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9407DADF89E4FFE8A1656D514F80ED6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_18972D66A5024C5985ABFEB1FF1E8B36 }}
           package: .
