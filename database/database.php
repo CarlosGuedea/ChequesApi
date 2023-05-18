@@ -1,15 +1,12 @@
 <?php
-return [
-    'connections' => [
-        'sqlsrv' => [
-            'driver' => 'sqlsrv',
-            'host' => env('DB_HOST'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE'),
-            'username' => env('DB_USERNAME'),
-            'password' => env('DB_PASSWORD'),
-            'charset' => 'utf8',
-            'prefix' => '',
-        ],
-    ],
-];
+class Base {
+    function ConexionBD(){
+        $con = new PDO('sqlsrv:Server=xamarinmultiplaforma.database.windows.net;Database=Cheuqes', 'user', 'Particionar22');
+        if(!$con){
+            exit;
+        }
+    return $con;
+    }
+}
+
+?>
