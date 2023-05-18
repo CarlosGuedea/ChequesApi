@@ -3,7 +3,7 @@ require_once 'vendor/autoload.php';
 require 'controllers/ChequeController.php';
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/cheques', [ChequeController::class, 'recuperarCheque']);
+    $r->addRoute(['GET','POST'], '/cheques', [ChequeController::class, 'recuperarCheque']);
 
 });
 
