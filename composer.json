@@ -1,0 +1,17 @@
+{
+    "name": "guede/cheques-api",
+    "autoload": {
+        "psr-4": {
+            "Guede\\ChequesApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CarlosGuedea",
+            "email": "57150568+CarlosGuedea@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "nikic/fast-route": "^1.3"
+    }
+}
