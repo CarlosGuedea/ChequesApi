@@ -5,6 +5,8 @@ require 'controllers/ChequeController.php';
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute(['GET','POST'], '/cheques', [ChequeController::class, 'recuperarCheque']);
 
+    $r->addRoute(['GET','POST'], '/', [ChequeController::class, 'recuperarCheque']);
+
 });
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];
